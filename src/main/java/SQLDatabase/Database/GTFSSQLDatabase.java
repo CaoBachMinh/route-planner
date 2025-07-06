@@ -110,7 +110,7 @@ public class GTFSSQLDatabase implements GTFSDatabase {
 
     public static void main(String[] args) throws IOException, SQLException {
         CurrentSQLiteDatabase.setCurrentConnection(Connections.JDBC_DATABASE_CONNECTION,new SQLiteBaseConfigFactory().getConfig());
-        ZipFile zipFile = new ZipFile("data/gtfs/gtfs-20250527-20250621.zip");
+        ZipFile zipFile = new ZipFile("testGTFS.zip");
         GTFSDatabase database = new GTFSSQLDatabase();
         database.load(zipFile);
     }

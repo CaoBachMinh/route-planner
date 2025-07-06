@@ -22,7 +22,6 @@ import org.jxmapviewer.viewer.GeoPosition;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.*;
