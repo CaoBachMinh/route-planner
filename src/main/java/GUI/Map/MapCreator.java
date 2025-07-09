@@ -8,6 +8,7 @@ import GUI.Application.*;
 import Routing.Engine.RoutingEngine;
 import org.jxmapviewer.JXMapViewer;
 import org.jxmapviewer.OSMTileFactoryInfo;
+import org.jxmapviewer.VirtualEarthTileFactoryInfo;
 import org.jxmapviewer.input.PanMouseInputListener;
 import org.jxmapviewer.input.ZoomMouseWheelListenerCenter;
 import org.jxmapviewer.painter.CompoundPainter;
@@ -30,14 +31,15 @@ public class MapCreator {
 
         createSideControls(engine);
 
-        TileFactoryInfo info = new OSMTileFactoryInfo(
+        TileFactoryInfo LuxembourgInfo = new OSMTileFactoryInfo(
                 "osm", "jar:file:data/tiles/luxembourg_map_tiles.zip!"
         );
-        mapViewer.setTileFactory(new DefaultTileFactory(info));
+        TileFactoryInfo  globalInfo = new VirtualEarthTileFactoryInfo(VirtualEarthTileFactoryInfo.MAP);
+        mapViewer.setTileFactory(new DefaultTileFactory(globalInfo));
 
         double[] center = city.getCenterCoordinates();
         mapViewer.setAddressLocation(new GeoPosition(center[0], center[1]));
-        mapViewer.setZoom(6);
+        mapViewer.setZoom(3);
 
         PanMouseInputListener pan = new PanMouseInputListener(mapViewer);
         mapViewer.addMouseListener(pan);

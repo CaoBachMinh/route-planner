@@ -1,6 +1,6 @@
-package GUI.Application;
+package GUI.Map;
 
-import GUI.Map.ControlPanel;
+import GUI.Application.*;
 import GUI.Painter.RoutePainter;
 import Utils.Location.Location;
 import Utils.Time.DateCalculator;

@@ -58,6 +58,7 @@ public class TripsDetailsPanel extends JPanel {
         transferList.setLayout(new BoxLayout(transferList, BoxLayout.Y_AXIS));
         transferList.setAlignmentX(Component.CENTER_ALIGNMENT);
         JScrollPane transferScrollPane = new JScrollPane(transferList);
+        transferScrollPane.setBorder(null);
         transferScrollPane.setMaximumSize(new Dimension(230, 150));
         transferScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         transferScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -90,6 +91,8 @@ public class TripsDetailsPanel extends JPanel {
     public void setUpInputPoint() {
         tripsInputsPanel = new TripsInputsPanel();
         JScrollPane tripsInputPanelSctoll = new JScrollPane(tripsInputsPanel);
+        tripsInputPanelSctoll.setMaximumSize(new Dimension(190, 40));
+        tripsInputPanelSctoll.setBorder(null);
         add(tripsInputPanelSctoll);
 
         add(Box.createVerticalStrut(10));

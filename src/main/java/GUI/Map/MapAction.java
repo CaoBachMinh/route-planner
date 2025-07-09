@@ -1,6 +1,6 @@
-package GUI.Application;
+package GUI.Map;
 
-import GUI.Map.ControlPanel;
+import GUI.Application.StopPoint;
 import GUI.Painter.HeatMapPainter;
 import GUI.Painter.RoutePainter;
 import GUI.Painter.StopsPainter;
@@ -233,10 +233,5 @@ public class MapAction {
         }
         painterOverlay.setPainters(layers);
         mapViewer.repaint();
-    }
-
-    public void addDay()
-    {
-        this.currDate = currDate.plusDays(1);
     }
 }

@@ -13,9 +13,9 @@ public class HeatMapCells {
     private static List<HeatNode> mapCells;
     private static double MAX_VALUE = 30; //mins
     private static double CELL_SIZE; //km
-    private static final double TRANSPARENCY = 40; //percentage
+    private static final double TRANSPARENCY = 50; //percentage
     private static final Color DEPARTURE_COLOR = Color.black;
-    private static final int CELL_AMOUNT = 35000;
+    private static final int CELL_AMOUNT = 30000;
     private static final double START_POINT_RADIUS = 0.1;
     private static final int alphaValue = (int) (255 * (1-(TRANSPARENCY)/100));
     private static final double CELL_TO_VALUE_RATIO = 0.00318;

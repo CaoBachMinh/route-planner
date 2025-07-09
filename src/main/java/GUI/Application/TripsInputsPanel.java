@@ -18,11 +18,10 @@ public class TripsInputsPanel extends JPanel{
     }
     private void initialize(){
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-        setMaximumSize(new Dimension(250, 100));
+        setMaximumSize(new Dimension(0, 100));
     }
     public void addBox(String coordinates , String labelName){
         Box box = new Box(BoxLayout.X_AXIS);
-
         addNext(labelName);
         JLabel label = new JLabel(labelName + ":");
         label.setMaximumSize(new Dimension(50, 25));
